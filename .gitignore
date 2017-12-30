@@ -57,3 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# sqlite DB
+db.sqlite
+
+# Internal MAC files
+.DS_Store
+

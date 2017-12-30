@@ -1,0 +1,28 @@
+{
+  "name": "person",
+  "version": "1.0.0",
+  "description": "Simple DB example program illustrating the CRUD interface",
+  "main": "0_init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CORE-UPM/person.git"
+  },
+  "keywords": [
+    "DB",
+    "sqlite3",
+    "sequelize"
+  ],
+  "author": "Juan Quemada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CORE-UPM/person/issues"
+  },
+  "homepage": "https://github.com/CORE-UPM/person#readme",
+  "dependencies": {
+    "sequelize": "^3.30.2",
+    "sqlite3": "^3.1.8"
+  }
+}
