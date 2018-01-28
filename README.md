@@ -2,7 +2,7 @@
 
 This project contains an *npm package* with a simple 
 example illustrating how to program a very simple 
-*DB* (Data Base) with only *one table* (Person) with 
+*DB* (Data Base) with only *one table* (people) with 
 a two column tuple (<name, age>) and a set of commands 
 implementing the *CRUD* interface to access it.
 
@@ -86,7 +86,7 @@ $
 
 ### Step 3
 
-In step 3 the bare model of table Person 
+In step 3 the bare model of table people 
 (file model.js) is added, together with 
 six comands for Initializing the DB (0_init.js),
 Creating entries (2_create.js), Reading entries 
@@ -95,7 +95,7 @@ and deleting (5_delete.js) entries. This are the six
 files added:
 
 ```
-model.js     ## defines table Person with <name,age>
+model.js     ## defines model person with <name,age>
 0_init.js    ## creates and initializes the DB
 1_all.js     ## shows <name> & <age> of all entries
 2_create.js  ## creates a new table entry
@@ -106,7 +106,7 @@ model.js     ## defines table Person with <name,age>
 
 ### Step 4
 
-In step 4 the model of table Person (file model.js) 
+In step 4 the model of table people (file model.js) 
 is substituted by a new one which introduces validation:
 
 ```
@@ -117,8 +117,10 @@ is substituted by a new one which introduces validation:
 
 ### Step 5
 
-In step 5 the model of table Person (file model.js) 
+In step 5 the model of table people (file model.js) 
 is again substituted by a new one which adds validation
 messages. And the project is pushed back to GitHub with
 the 5 commits. 
+
+README.md is also updated with some corrections.
 

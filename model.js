@@ -8,12 +8,17 @@ sequelize.define(
   'person', 
   { name: { 
       type: Sequelize.STRING,
-      unique: true,
-      validate: { is: /^[a-z]+$/i }
+      unique: { msg: "Name already exists"},
+      validate: { 
+        is: { args: /^[a-z]+$/i, msg: "name: invalid characters"}
+      }
     },
     age: {
       type: Sequelize.INTEGER,
-      validate: { min: 0, max: 150 }      
+      validate: { 
+        min: { args:   [0], msg: "Age less than 0"},
+        max: { args: [150], msg: "Age higher than 150"}
+      }
     }
   }
 );
